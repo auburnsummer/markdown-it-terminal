@@ -1,6 +1,6 @@
 {
   "name": "@auburnsummer/markdown-it-terminal",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "for my internal use. markdown-it-terminal with cardinal removed",
   "main": "index.js",
   "files": [
