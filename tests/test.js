@@ -94,14 +94,6 @@ describe('markdown-it-terminal', function () {
       .to.equal('\n\u001b[33mvar foo = blah;\nfunction bar() {\n   return "bar";\n}\n\u001b[39m\n\n');
   });
   
-  it('renders code highlighting', function(){    
-    expect(md.render('```js\nvar foo = blah;\nfunction bar() {\n   return "bar";\n}\n```'))
-      .to.equal('\n\u001b[33m\u001b[32mvar\u001b[39m \u001b[37mfoo\u001b[39m \u001b[93m=\u001b[39m'+
-      ' \u001b[37mblah\u001b[39m\u001b[90m;\u001b[39m\n\u001b[94mfunction\u001b[39m \u001b[37m'+
-      'bar\u001b[39m\u001b[90m(\u001b[39m\u001b[90m)\u001b[39m \u001b[33m{\u001b[39m\n   \u001b[31m'+
-      'return\u001b[39m \u001b[92m"bar"\u001b[39m\u001b[90m;\u001b[39m\n\u001b[33m}\u001b[39m\n\u001b[39m\n\n');
-  });
-  
   it('allows overrides of basic styles', function() {
     var markdown = new MarkdownIt().use(terminal,{styleOptions:{codespan:styles.green}});
     expect(markdown.render('`code should be green`'))
