@@ -7,12 +7,12 @@ module.exports = function terminal_plugin(md,options) {
   var defaultOptions = {
     styleOptions: {
       code: styles.yellow,
-      blockquote: terminal.compoundStyle(['gray','italic']),
+      blockquote: styles.bold,
       html: styles.gray,
       heading: terminal.compoundStyle(['green','bold']),
       firstHeading: terminal.compoundStyle(['magenta','underline','bold']),
       hr: styles.reset,
-      listitem: styles.reset,
+      listitem: terminal.compoundStyle(['green','bold']),
       table: styles.reset,
       paragraph: styles.reset,
       strong: styles.bold,
