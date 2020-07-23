@@ -6,18 +6,18 @@ var styles        = require('ansi-styles');
 module.exports = function terminal_plugin(md,options) {
   var defaultOptions = {
     styleOptions: {
-      code: styles.yellow,
+      code: styles.reset,
       blockquote: styles.bold,
       html: styles.gray,
       heading: terminal.compoundStyle(['green','bold']),
       firstHeading: terminal.compoundStyle(['magenta','underline','bold']),
       hr: styles.reset,
-      listitem: terminal.compoundStyle(['green','bold']),
+      listitem: styles.yellow,
       table: styles.reset,
       paragraph: styles.reset,
       strong: styles.bold,
       em: styles.italic,
-      codespan: styles.yellow,
+      codespan: styles.bold,
       del: terminal.compoundStyle(['dim','gray','strikethrough']),
       link: styles.blue,
       href: terminal.compoundStyle(['blue','underline'])
