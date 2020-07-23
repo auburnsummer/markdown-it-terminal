@@ -1,3 +1,8 @@
+This is a fork that removes the cardinal dependency and that's all.
+
+I'm using this in a situation where I cannot access the `fs` module.
+
+
 markdown-it-terminal
 ===
 [![Build Status](https://travis-ci.org/trabus/markdown-it-terminal.svg)](https://travis-ci.org/trabus/markdown-it-terminal)
