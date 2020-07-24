@@ -17,7 +17,7 @@ module.exports = function terminal_plugin(md,options) {
       paragraph: styles.reset,
       strong: styles.bold,
       em: styles.italic,
-      codespan: styles.bold,
+      codespan: styles.reset,
       del: terminal.compoundStyle(['dim','gray','strikethrough']),
       link: styles.blue,
       href: terminal.compoundStyle(['blue','underline'])
